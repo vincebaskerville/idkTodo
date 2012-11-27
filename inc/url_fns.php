@@ -58,18 +58,11 @@ function delete_bm($user, $url) {
 }
 
 function recommend_urls($valid_user, $popularity = 1) {
-  // We will provide semi intelligent recomendations to people
-  // If they have an URL in common with other users, they may like
-  // other URLs that these people like
+  // We will provide semi intelligent recomendations to people if they have an URL in common with other users, they may like other URLs that these people like
   $conn = db_connect();
 
-  // find other matching users
-  // with an url the same as you
-  // as a simple way of excluding people's private pages, and
-  // increasing the chance of recommending appealing URLs, we
-  // specify a minimum popularity level
-  // if $popularity = 1, then more than one person must have
-  // an URL before we will recomend it
+  // find other matching users with an url the same as you as a simple way of excluding people's private pages, and increasing the chance of recommending appealing URLs, we specify a minimum popularity level
+  // if $popularity = 1, then more than one person must have an URL before we will recomend it
 
   $query = "select bm_URL
 	        from bookmark
