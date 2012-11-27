@@ -1,10 +1,10 @@
 <?php
 //require("inc/db_fns.php");
 
-	DEFINE ('DB_USER', 'db69392_idktodo');  
-	DEFINE ('DB_PASSWORD', 'happyness');  
-	DEFINE ('DB_HOST', 'external-db.s69392.gridserver.com');  
-	DEFINE ('DB_NAME', 'db69392_idktodo'); 
+	DEFINE ('DB_USER', '');  
+	DEFINE ('DB_PASSWORD', '');  
+	DEFINE ('DB_HOST', '');  
+	DEFINE ('DB_NAME', ''); 
 	
 	$connection = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD) or 
 	die('Connection to the specified database couldn\'t be established');  
